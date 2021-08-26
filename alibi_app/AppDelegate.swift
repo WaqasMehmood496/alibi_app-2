@@ -1,25 +1,87 @@
-//
-//  AppDelegate.swift
-//  alibi_app
-//
-//  Created by Uzair Masood on 5/27/21.
-//  Copyright © 2021 apple. All rights reserved.
-//
+
 
 import UIKit
 import CoreData
+import IQKeyboardManagerSwift
+import Firebase
+import GoogleSignIn
+import GoogleMaps
+import FirebaseAuth
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate{
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error {
+                if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
+                  print("The user has not signed in before or they have since signed out.")
+                } else {
+                  print("\(error.localizedDescription)")
+                }
+                return
+              }
+        // Perform any operations on signed in user here.
+          let userId = user.userID                  // For client-side use only!
+          let idToken = user.authentication.idToken // Safe to send to the server
+          let fullName = user.profile.name
+          let givenName = user.profile.givenName
+          let familyName = user.profile.familyName
+          let email = user.profile.email
+          // ...
+    }
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+        // hello
+    }
+    
+    func changeRootView(identifier:String) {
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: identifier)
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
     }
 
+    var window: UIWindow?
+    
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+       
+        
+        
+        // Override point for customization after application launch.
+        GIDSignIn.sharedInstance()?.clientID = "1059715865378-70br72dlouct50pcpupkd5rev2q4qu0j.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().delegate = self as GIDSignInDelegate
+        IQKeyboardManager.shared.enable = true
+        FirebaseApp.configure()
+        GMSServices.provideAPIKey("AIzaSyBiGivEjm4gudavL1WO9M9-cmkb7t9cxEo")
+        
+        Auth.auth().addStateDidChangeListener() { auth, user in
+                if user != nil {
+                    
+                    firebase_signin = true
+                    google_signin = false
+                    apple_signin = false
+                    self.changeRootView(identifier: "homepage")
+                   // self.performSegue(withIdentifier: "Present", sender: nil)
+                }
+                else{
+                    self.changeRootView(identifier: "launchscreen")
+                    print("stay")
+                }
+            }
+        
+        return true
+    }
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url)
+    }
+//    func changeRootView(identifier:String) {
+//        self.window = UIWindow(frame: UIScreen.main.bounds)
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let initialViewController = storyboard.instantiateViewController(withIdentifier: identifier)
+//        self.window?.rootViewController = initialViewController
+//        self.window?.makeKeyAndVisible()
+//      }
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

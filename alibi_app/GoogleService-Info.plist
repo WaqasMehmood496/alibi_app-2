@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>38841396721-isvepv4t28sfssnfb8hqq7t7p84vn5bm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.38841396721-isvepv4t28sfssnfb8hqq7t7p84vn5bm</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDQR5XL0DXA9VAeptCTReotaHGQfVU0SR4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>38841396721</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Biit.alibi-app</string>
+	<key>PROJECT_ID</key>
+	<string>alibi-d5dc7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>alibi-d5dc7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:38841396721:ios:f70d60e90b4c246529e850</string>
+	<key>DATABASE_URL</key>
+	<string>https://alibi-d5dc7-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

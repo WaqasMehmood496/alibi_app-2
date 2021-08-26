@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,57 @@
 		181E47D7265FB03F00A3726E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181E47D5265FB03F00A3726E /* LaunchScreen.storyboard */; };
 		181E47E2265FB03F00A3726E /* alibi_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E47E1265FB03F00A3726E /* alibi_appTests.swift */; };
 		181E47ED265FB03F00A3726E /* alibi_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E47EC265FB03F00A3726E /* alibi_appUITests.swift */; };
+		186489F926651416005EB743 /* CurrentEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186489F826651416005EB743 /* CurrentEvent.swift */; };
+		186489FB2665202F005EB743 /* PostEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186489FA2665202F005EB743 /* PostEvent.swift */; };
+		186489FD266522D6005EB743 /* PostEventWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186489FC266522D6005EB743 /* PostEventWork.swift */; };
+		186489FF266526AB005EB743 /* Calender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186489FE266526AB005EB743 /* Calender.swift */; };
+		18A921F526611B110096C6A2 /* ActiveEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A921F426611B110096C6A2 /* ActiveEvents.swift */; };
+		18A921F826611B750096C6A2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A921F726611B750096C6A2 /* TableViewCell.swift */; };
+		18A921FA2661350C0096C6A2 /* Rosters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A921F92661350C0096C6A2 /* Rosters.swift */; };
+		18A930FF2664D9C300A44C21 /* InviteNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A930FE2664D9C300A44C21 /* InviteNotification.swift */; };
+		18B9665B266B67C8004D812C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18B9665A266B67C8004D812C /* GoogleService-Info.plist */; };
+		18B96660266B6D00004D812C /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9665F266B6D00004D812C /* Global.swift */; };
+		18B96662266B6E5E004D812C /* Signin_Viewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B96661266B6E5E004D812C /* Signin_Viewcontroller.swift */; };
+		18B96665266B7683004D812C /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B96664266B7683004D812C /* ChatModel.swift */; };
+		18CAD8C6265FB31C00A55200 /* externalfiles in Resources */ = {isa = PBXBuildFile; fileRef = 18CAD8C5265FB31C00A55200 /* externalfiles */; };
+		18D7D1C3266A0815008E0573 /* CURRENTEVENT1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D7D1C2266A0815008E0573 /* CURRENTEVENT1.swift */; };
+		18D7D1C5266A14BB008E0573 /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D7D1C4266A14BB008E0573 /* EventDetail.swift */; };
+		18FE9F14266E191D00996F98 /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE9F13266E191D00996F98 /* profile.swift */; };
+		34CBF6C51DA617F4F1F4043A /* Pods_alibi_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC04EF3BD67CEE2452854C21 /* Pods_alibi_appTests.framework */; };
+		6E37532AF7A597BDA0C42C8E /* Pods_alibi_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86CBE6501141C06562EC015 /* Pods_alibi_app.framework */; };
+		732BC06B267DD9C000E6D1CD /* GeoTrackedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732BC06A267DD9C000E6D1CD /* GeoTrackedEvent.swift */; };
+		732BC070267DDA6700E6D1CD /* GeoTrackedNone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732BC06F267DDA6700E6D1CD /* GeoTrackedNone.swift */; };
+		7332416F267206F900A3FF02 /* CreateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7332416E267206F900A3FF02 /* CreateEvent.swift */; };
+		7332419A2672320900A3FF02 /* CreateEventEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733241992672320900A3FF02 /* CreateEventEmpty.swift */; };
+		7332419F2672322200A3FF02 /* CreateEventFilled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7332419E2672322200A3FF02 /* CreateEventFilled.swift */; };
+		733241A42672364000A3FF02 /* CurrentEventMedicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733241A32672364000A3FF02 /* CurrentEventMedicle.swift */; };
+		734B6E5E26A02BE200AAED6C /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734B6E5D26A02BE200AAED6C /* MessageController.swift */; };
+		73530ED12670F7D70064DDCB /* usermodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73530ED02670F7D70064DDCB /* usermodel.swift */; };
+		73530ED62670F86C0064DDCB /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73530ED52670F86C0064DDCB /* constants.swift */; };
+		735C63232677845E00E081FA /* iOSDropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735C63222677845E00E081FA /* iOSDropDown.framework */; };
+		739E59282673724800B9C0B5 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739E59272673724800B9C0B5 /* MainScreen.swift */; };
+		73C7CDDA2678BCA300C93DD9 /* DetailEvent2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7CDD92678BCA300C93DD9 /* DetailEvent2.swift */; };
+		73C7CDE22678E82D00C93DD9 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7CDE12678E82D00C93DD9 /* Protocols.swift */; };
+		73D4F8CC269C835500070990 /* abc.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73D4F8CB269C835500070990 /* abc.plist */; };
+		73FB224526987B01002EDC73 /* LoadingScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB224426987B01002EDC73 /* LoadingScreenController.swift */; };
+		73FD69A7267CBEFD000A5970 /* FirebaseCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FD69A6267CBEFD000A5970 /* FirebaseCordinator.swift */; };
+		73FD69B7267CCB60000A5970 /* launchscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FD69B6267CCB60000A5970 /* launchscreen.swift */; };
+		9C3F30BB1DD9C64D430F0FD5 /* Pods_alibi_app_alibi_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AA1E532CBEEA5E45D508EB /* Pods_alibi_app_alibi_appUITests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		18AB6E18266E512A00453CE1 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		181E47DE265FB03F00A3726E /* PBXContainerItemProxy */ = {
@@ -35,6 +85,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		132FB6DA7350419626D95071 /* Pods-alibi_app-alibi_appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alibi_app-alibi_appUITests.release.xcconfig"; path = "Target Support Files/Pods-alibi_app-alibi_appUITests/Pods-alibi_app-alibi_appUITests.release.xcconfig"; sourceTree = "<group>"; };
 		181E47C6265FB03B00A3726E /* alibi_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alibi_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181E47C9265FB03B00A3726E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		181E47CB265FB03B00A3726E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +100,52 @@
 		181E47E8265FB03F00A3726E /* alibi_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alibi_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		181E47EC265FB03F00A3726E /* alibi_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alibi_appUITests.swift; sourceTree = "<group>"; };
 		181E47EE265FB03F00A3726E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186489F826651416005EB743 /* CurrentEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentEvent.swift; sourceTree = "<group>"; };
+		186489FA2665202F005EB743 /* PostEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEvent.swift; sourceTree = "<group>"; };
+		186489FC266522D6005EB743 /* PostEventWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEventWork.swift; sourceTree = "<group>"; };
+		186489FE266526AB005EB743 /* Calender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calender.swift; sourceTree = "<group>"; };
+		18A921F426611B110096C6A2 /* ActiveEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveEvents.swift; sourceTree = "<group>"; };
+		18A921F726611B750096C6A2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		18A921F92661350C0096C6A2 /* Rosters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rosters.swift; sourceTree = "<group>"; };
+		18A930FE2664D9C300A44C21 /* InviteNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteNotification.swift; sourceTree = "<group>"; };
+		18AB6E08266E27EC00453CE1 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AB6E0A266E2E8B00453CE1 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AB6E0C266E2E8B00453CE1 /* GTMAppAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMAppAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AB6E0E266E2E8B00453CE1 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AB6E19266E518400453CE1 /* alibi_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = alibi_app.entitlements; sourceTree = "<group>"; };
+		18B9665A266B67C8004D812C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18B9665F266B6D00004D812C /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		18B96661266B6E5E004D812C /* Signin_Viewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signin_Viewcontroller.swift; sourceTree = "<group>"; };
+		18B96664266B7683004D812C /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		18CAD8C5265FB31C00A55200 /* externalfiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = externalfiles; sourceTree = "<group>"; };
+		18D7D1C2266A0815008E0573 /* CURRENTEVENT1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CURRENTEVENT1.swift; sourceTree = "<group>"; };
+		18D7D1C4266A14BB008E0573 /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
+		18FE9F13266E191D00996F98 /* profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
+		440D6D615D790FD0F8D9A642 /* Pods-alibi_app-alibi_appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alibi_app-alibi_appUITests.debug.xcconfig"; path = "Target Support Files/Pods-alibi_app-alibi_appUITests/Pods-alibi_app-alibi_appUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D9C4640E737E2B8A9568720 /* Pods-alibi_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alibi_app.release.xcconfig"; path = "Target Support Files/Pods-alibi_app/Pods-alibi_app.release.xcconfig"; sourceTree = "<group>"; };
+		6BA6C382B19C878E35B8CD19 /* Pods-alibi_appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alibi_appTests.debug.xcconfig"; path = "Target Support Files/Pods-alibi_appTests/Pods-alibi_appTests.debug.xcconfig"; sourceTree = "<group>"; };
+		732BC06A267DD9C000E6D1CD /* GeoTrackedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoTrackedEvent.swift; sourceTree = "<group>"; };
+		732BC06F267DDA6700E6D1CD /* GeoTrackedNone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoTrackedNone.swift; sourceTree = "<group>"; };
+		7332416E267206F900A3FF02 /* CreateEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEvent.swift; sourceTree = "<group>"; };
+		733241992672320900A3FF02 /* CreateEventEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventEmpty.swift; sourceTree = "<group>"; };
+		7332419E2672322200A3FF02 /* CreateEventFilled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventFilled.swift; sourceTree = "<group>"; };
+		733241A32672364000A3FF02 /* CurrentEventMedicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentEventMedicle.swift; sourceTree = "<group>"; };
+		734B6E5D26A02BE200AAED6C /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		73530ED02670F7D70064DDCB /* usermodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usermodel.swift; sourceTree = "<group>"; };
+		73530ED52670F86C0064DDCB /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		735C63222677845E00E081FA /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		739E59272673724800B9C0B5 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		73C7CDD92678BCA300C93DD9 /* DetailEvent2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEvent2.swift; sourceTree = "<group>"; };
+		73C7CDE12678E82D00C93DD9 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		73D4F8CB269C835500070990 /* abc.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = abc.plist; sourceTree = SOURCE_ROOT; };
+		73FB224426987B01002EDC73 /* LoadingScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenController.swift; sourceTree = "<group>"; };
+		73FD69A6267CBEFD000A5970 /* FirebaseCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCordinator.swift; sourceTree = "<group>"; };
+		73FD69B6267CCB60000A5970 /* launchscreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = launchscreen.swift; sourceTree = "<group>"; };
+		C0E88C97FCCB41230A498DFD /* Pods-alibi_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alibi_app.debug.xcconfig"; path = "Target Support Files/Pods-alibi_app/Pods-alibi_app.debug.xcconfig"; sourceTree = "<group>"; };
+		C5AA1E532CBEEA5E45D508EB /* Pods_alibi_app_alibi_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alibi_app_alibi_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC04EF3BD67CEE2452854C21 /* Pods_alibi_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alibi_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9B59194EE2E5B4D23762E5 /* Pods-alibi_appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alibi_appTests.release.xcconfig"; path = "Target Support Files/Pods-alibi_appTests/Pods-alibi_appTests.release.xcconfig"; sourceTree = "<group>"; };
+		F86CBE6501141C06562EC015 /* Pods_alibi_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alibi_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +153,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				735C63232677845E00E081FA /* iOSDropDown.framework in Frameworks */,
+				6E37532AF7A597BDA0C42C8E /* Pods_alibi_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34CBF6C51DA617F4F1F4043A /* Pods_alibi_appTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3F30BB1DD9C64D430F0FD5 /* Pods_alibi_app_alibi_appUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +184,8 @@
 				181E47E0265FB03F00A3726E /* alibi_appTests */,
 				181E47EB265FB03F00A3726E /* alibi_appUITests */,
 				181E47C7265FB03B00A3726E /* Products */,
+				9F14E44975C58DB3E8BB8C1B /* Pods */,
+				95543FEC9DD51290635B6F6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +202,19 @@
 		181E47C8265FB03B00A3726E /* alibi_app */ = {
 			isa = PBXGroup;
 			children = (
+				18AB6E19266E518400453CE1 /* alibi_app.entitlements */,
+				18B9665E266B6CEE004D812C /* Constant */,
+				18A921F626611B590096C6A2 /* tableview class */,
+				18A921F326611AE80096C6A2 /* ViewControllers */,
+				18CAD8C5265FB31C00A55200 /* externalfiles */,
 				181E47C9265FB03B00A3726E /* AppDelegate.swift */,
 				181E47CB265FB03B00A3726E /* ViewController.swift */,
 				181E47CD265FB03B00A3726E /* Main.storyboard */,
 				181E47D3265FB03F00A3726E /* Assets.xcassets */,
 				181E47D5265FB03F00A3726E /* LaunchScreen.storyboard */,
 				181E47D8265FB03F00A3726E /* Info.plist */,
+				73D4F8CB269C835500070990 /* abc.plist */,
+				18B9665A266B67C8004D812C /* GoogleService-Info.plist */,
 				181E47D0265FB03B00A3726E /* alibi_app.xcdatamodeld */,
 			);
 			path = alibi_app;
@@ -128,6 +238,108 @@
 			path = alibi_appUITests;
 			sourceTree = "<group>";
 		};
+		18A921F326611AE80096C6A2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				731D5E5126820AC6007FBA82 /* Views */,
+				73FD69A5267CBED4000A5970 /* FirebaseCordinator */,
+				18B96663266B764E004D812C /* Model */,
+				18A921F426611B110096C6A2 /* ActiveEvents.swift */,
+				18A921F92661350C0096C6A2 /* Rosters.swift */,
+				18A930FE2664D9C300A44C21 /* InviteNotification.swift */,
+				186489F826651416005EB743 /* CurrentEvent.swift */,
+				186489FA2665202F005EB743 /* PostEvent.swift */,
+				186489FC266522D6005EB743 /* PostEventWork.swift */,
+				186489FE266526AB005EB743 /* Calender.swift */,
+				18D7D1C2266A0815008E0573 /* CURRENTEVENT1.swift */,
+				18D7D1C4266A14BB008E0573 /* EventDetail.swift */,
+				18B96661266B6E5E004D812C /* Signin_Viewcontroller.swift */,
+				18FE9F13266E191D00996F98 /* profile.swift */,
+				7332416E267206F900A3FF02 /* CreateEvent.swift */,
+				733241992672320900A3FF02 /* CreateEventEmpty.swift */,
+				7332419E2672322200A3FF02 /* CreateEventFilled.swift */,
+				733241A32672364000A3FF02 /* CurrentEventMedicle.swift */,
+				739E59272673724800B9C0B5 /* MainScreen.swift */,
+				73C7CDD92678BCA300C93DD9 /* DetailEvent2.swift */,
+				73C7CDE12678E82D00C93DD9 /* Protocols.swift */,
+				73FD69B6267CCB60000A5970 /* launchscreen.swift */,
+				732BC06A267DD9C000E6D1CD /* GeoTrackedEvent.swift */,
+				732BC06F267DDA6700E6D1CD /* GeoTrackedNone.swift */,
+				73FB224426987B01002EDC73 /* LoadingScreenController.swift */,
+				734B6E5D26A02BE200AAED6C /* MessageController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		18A921F626611B590096C6A2 /* tableview class */ = {
+			isa = PBXGroup;
+			children = (
+				18A921F726611B750096C6A2 /* TableViewCell.swift */,
+			);
+			path = "tableview class";
+			sourceTree = "<group>";
+		};
+		18B9665E266B6CEE004D812C /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				18B9665F266B6D00004D812C /* Global.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		18B96663266B764E004D812C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18B96664266B7683004D812C /* ChatModel.swift */,
+				73530ED02670F7D70064DDCB /* usermodel.swift */,
+				73530ED52670F86C0064DDCB /* constants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		731D5E5126820AC6007FBA82 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		73FD69A5267CBED4000A5970 /* FirebaseCordinator */ = {
+			isa = PBXGroup;
+			children = (
+				73FD69A6267CBEFD000A5970 /* FirebaseCordinator.swift */,
+			);
+			path = FirebaseCordinator;
+			sourceTree = "<group>";
+		};
+		95543FEC9DD51290635B6F6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				735C63222677845E00E081FA /* iOSDropDown.framework */,
+				18AB6E0A266E2E8B00453CE1 /* GoogleUtilities.framework */,
+				18AB6E0C266E2E8B00453CE1 /* GTMAppAuth.framework */,
+				18AB6E0E266E2E8B00453CE1 /* GTMSessionFetcher.framework */,
+				18AB6E08266E27EC00453CE1 /* GoogleUtilities.framework */,
+				F86CBE6501141C06562EC015 /* Pods_alibi_app.framework */,
+				C5AA1E532CBEEA5E45D508EB /* Pods_alibi_app_alibi_appUITests.framework */,
+				DC04EF3BD67CEE2452854C21 /* Pods_alibi_appTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F14E44975C58DB3E8BB8C1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0E88C97FCCB41230A498DFD /* Pods-alibi_app.debug.xcconfig */,
+				4D9C4640E737E2B8A9568720 /* Pods-alibi_app.release.xcconfig */,
+				440D6D615D790FD0F8D9A642 /* Pods-alibi_app-alibi_appUITests.debug.xcconfig */,
+				132FB6DA7350419626D95071 /* Pods-alibi_app-alibi_appUITests.release.xcconfig */,
+				6BA6C382B19C878E35B8CD19 /* Pods-alibi_appTests.debug.xcconfig */,
+				EB9B59194EE2E5B4D23762E5 /* Pods-alibi_appTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,11 +347,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 181E47F1265FB03F00A3726E /* Build configuration list for PBXNativeTarget "alibi_app" */;
 			buildPhases = (
+				3FF7EC23326F77048018A092 /* [CP] Check Pods Manifest.lock */,
 				181E47C2265FB03B00A3726E /* Sources */,
 				181E47C3265FB03B00A3726E /* Frameworks */,
 				181E47C4265FB03B00A3726E /* Resources */,
+				4182F44224A91A5A7C750D06 /* [CP] Embed Pods Frameworks */,
+				4F5F03B30D1277F119F6B96C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
+				18AB6E18266E512A00453CE1 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -152,6 +368,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 181E47F4265FB03F00A3726E /* Build configuration list for PBXNativeTarget "alibi_appTests" */;
 			buildPhases = (
+				15D39C4529CADB0D068BDA90 /* [CP] Check Pods Manifest.lock */,
 				181E47D9265FB03F00A3726E /* Sources */,
 				181E47DA265FB03F00A3726E /* Frameworks */,
 				181E47DB265FB03F00A3726E /* Resources */,
@@ -170,9 +387,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 181E47F7265FB03F00A3726E /* Build configuration list for PBXNativeTarget "alibi_appUITests" */;
 			buildPhases = (
+				E65B4F496DA8856D0C4DDD6E /* [CP] Check Pods Manifest.lock */,
 				181E47E4265FB03F00A3726E /* Sources */,
 				181E47E5265FB03F00A3726E /* Frameworks */,
 				181E47E6265FB03F00A3726E /* Resources */,
+				4C5ABBCCEB83E800BA9508D9 /* [CP] Embed Pods Frameworks */,
+				D5D3DF545ACA0605B4B90E85 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,12 +410,26 @@
 		181E47BE265FB03B00A3726E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = apple;
 				TargetAttributes = {
 					181E47C5265FB03B00A3726E = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 0;
+							};
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.AutoFillCredentialProvider = {
+								enabled = 0;
+							};
+						};
 					};
 					181E47DC265FB03F00A3726E = {
 						CreatedOnToolsVersion = 10.1;
@@ -234,7 +468,10 @@
 			files = (
 				181E47D7265FB03F00A3726E /* LaunchScreen.storyboard in Resources */,
 				181E47D4265FB03F00A3726E /* Assets.xcassets in Resources */,
+				18B9665B266B67C8004D812C /* GoogleService-Info.plist in Resources */,
 				181E47CF265FB03B00A3726E /* Main.storyboard in Resources */,
+				18CAD8C6265FB31C00A55200 /* externalfiles in Resources */,
+				73D4F8CC269C835500070990 /* abc.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +491,180 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15D39C4529CADB0D068BDA90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-alibi_appTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FF7EC23326F77048018A092 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-alibi_app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4182F44224A91A5A7C750D06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alibi_app/Pods-alibi_app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alibi_app/Pods-alibi_app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-alibi_app/Pods-alibi_app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C5ABBCCEB83E800BA9508D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alibi_app-alibi_appUITests/Pods-alibi_app-alibi_appUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alibi_app-alibi_appUITests/Pods-alibi_app-alibi_appUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-alibi_app-alibi_appUITests/Pods-alibi_app-alibi_appUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F5F03B30D1277F119F6B96C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alibi_app/Pods-alibi_app-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alibi_app/Pods-alibi_app-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-alibi_app/Pods-alibi_app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5D3DF545ACA0605B4B90E85 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alibi_app-alibi_appUITests/Pods-alibi_app-alibi_appUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alibi_app-alibi_appUITests/Pods-alibi_app-alibi_appUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-alibi_app-alibi_appUITests/Pods-alibi_app-alibi_appUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E65B4F496DA8856D0C4DDD6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-alibi_app-alibi_appUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		181E47C2265FB03B00A3726E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73FD69B7267CCB60000A5970 /* launchscreen.swift in Sources */,
+				739E59282673724800B9C0B5 /* MainScreen.swift in Sources */,
+				18A921F826611B750096C6A2 /* TableViewCell.swift in Sources */,
+				18B96662266B6E5E004D812C /* Signin_Viewcontroller.swift in Sources */,
+				7332416F267206F900A3FF02 /* CreateEvent.swift in Sources */,
+				18D7D1C5266A14BB008E0573 /* EventDetail.swift in Sources */,
+				186489FF266526AB005EB743 /* Calender.swift in Sources */,
 				181E47D2265FB03B00A3726E /* alibi_app.xcdatamodeld in Sources */,
+				733241A42672364000A3FF02 /* CurrentEventMedicle.swift in Sources */,
+				186489F926651416005EB743 /* CurrentEvent.swift in Sources */,
+				732BC06B267DD9C000E6D1CD /* GeoTrackedEvent.swift in Sources */,
+				73C7CDE22678E82D00C93DD9 /* Protocols.swift in Sources */,
+				73530ED12670F7D70064DDCB /* usermodel.swift in Sources */,
+				73FD69A7267CBEFD000A5970 /* FirebaseCordinator.swift in Sources */,
+				7332419F2672322200A3FF02 /* CreateEventFilled.swift in Sources */,
+				18D7D1C3266A0815008E0573 /* CURRENTEVENT1.swift in Sources */,
+				18B96660266B6D00004D812C /* Global.swift in Sources */,
+				186489FD266522D6005EB743 /* PostEventWork.swift in Sources */,
+				732BC070267DDA6700E6D1CD /* GeoTrackedNone.swift in Sources */,
 				181E47CC265FB03B00A3726E /* ViewController.swift in Sources */,
+				18A921F526611B110096C6A2 /* ActiveEvents.swift in Sources */,
+				7332419A2672320900A3FF02 /* CreateEventEmpty.swift in Sources */,
+				73FB224526987B01002EDC73 /* LoadingScreenController.swift in Sources */,
+				73C7CDDA2678BCA300C93DD9 /* DetailEvent2.swift in Sources */,
+				18FE9F14266E191D00996F98 /* profile.swift in Sources */,
+				18B96665266B7683004D812C /* ChatModel.swift in Sources */,
+				18A921FA2661350C0096C6A2 /* Rosters.swift in Sources */,
+				734B6E5E26A02BE200AAED6C /* MessageController.swift in Sources */,
+				18A930FF2664D9C300A44C21 /* InviteNotification.swift in Sources */,
 				181E47CA265FB03B00A3726E /* AppDelegate.swift in Sources */,
+				186489FB2665202F005EB743 /* PostEvent.swift in Sources */,
+				73530ED62670F86C0064DDCB /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +754,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -371,6 +775,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -412,6 +817,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -425,6 +831,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -434,10 +841,42 @@
 		};
 		181E47F2265FB03F00A3726E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0E88C97FCCB41230A498DFD /* Pods-alibi_app.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = alibi_app/alibi_app.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 638JFH4RR5;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Calendar-iOS\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDatabase\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseStorage\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMAppAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReachabilitySwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleSignIn/Frameworks\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/FirebaseAnalytics\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAppMeasurement\"",
+				);
 				INFOPLIST_FILE = alibi_app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,16 +884,23 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Biit.alibi-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
 			};
 			name = Debug;
 		};
 		181E47F3265FB03F00A3726E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D9C4640E737E2B8A9568720 /* Pods-alibi_app.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = alibi_app/alibi_app.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 638JFH4RR5;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = alibi_app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,16 +908,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Biit.alibi-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
 			};
 			name = Release;
 		};
 		181E47F5265FB03F00A3726E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BA6C382B19C878E35B8CD19 /* Pods-alibi_appTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 638JFH4RR5;
 				INFOPLIST_FILE = alibi_appTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,10 +937,12 @@
 		};
 		181E47F6265FB03F00A3726E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB9B59194EE2E5B4D23762E5 /* Pods-alibi_appTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 638JFH4RR5;
 				INFOPLIST_FILE = alibi_appTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -508,9 +959,11 @@
 		};
 		181E47F8265FB03F00A3726E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 440D6D615D790FD0F8D9A642 /* Pods-alibi_app-alibi_appUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 638JFH4RR5;
 				INFOPLIST_FILE = alibi_appUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -527,9 +980,11 @@
 		};
 		181E47F9265FB03F00A3726E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 132FB6DA7350419626D95071 /* Pods-alibi_app-alibi_appUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 638JFH4RR5;
 				INFOPLIST_FILE = alibi_appUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
